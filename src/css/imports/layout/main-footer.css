@@ -1,0 +1,14 @@
+.main-footer {
+    flex-shrink: 0;
+
+    width: 100%;
+    padding: .6rem;
+    margin-top: 10rem;
+
+    font-size: 1rem;
+    text-align: center;
+}
+
+.main-footer__p {
+    margin: 0;
+}

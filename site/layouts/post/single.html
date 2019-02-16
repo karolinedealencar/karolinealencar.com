@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<main class="main-grid">
+    <article class="post">
+        <header class="post__header">
+            <h1 class="post__title">{{ .Title }}</h1>
+            <div class="post__info">
+                <p>
+                    {{ .Date.Format "02/01/2006" }} - 
+                    <a 
+                        href="categories/{{.Params.categories}}"
+                        title="{{.Params.categories}}"
+                    >
+                        #{{.Params.categories}}
+                    </a>
+                </p>
+            </div>
+        </header>
+        <div>
+            {{ .Content }}
+        </div>
+        <footer class="post__footer">
+            <h3 class="post__footer-title">Comments</h3>
+            {{ template "_internal/disqus.html" . }}
+        </footer>
+    </article>
+</main>
+{{ end }}

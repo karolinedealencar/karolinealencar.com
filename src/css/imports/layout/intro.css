@@ -1,0 +1,30 @@
+.intro {
+    text-align: center;
+}
+
+.intro__title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.intro__illustration {
+    width: 80%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.intro__content {
+    transform: translateY(-50px);
+}
+
+@media (max-width: 600px) {
+
+    .intro__title {
+        font-size: 2.2rem;
+    }
+
+    .intro__content {
+        transform: translateY(-20px);
+    }
+
+}

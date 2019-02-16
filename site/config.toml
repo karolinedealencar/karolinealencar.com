@@ -1,0 +1,19 @@
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "Karoline Alencar — Web Developer"
+disqusShortname = "karolinealencar"
+pygmentsStyle = "monokai"
+PygmentsCodeFences = true
+
+[taxonomies]
+   categories = "categories"
+
+[params]
+  author = "Karoline Alencar"
+  description = "Web Developer from Brazil."
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details: 
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["taxonomy", "taxonomyTerm"]
