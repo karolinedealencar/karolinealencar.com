@@ -8,7 +8,7 @@
 .about__illustration {
     width: 80%;
     max-width: 400px;
-    margin: 0 auto;
+    margin: 0 auto 1rem auto;
 }
 
 .about__title {
