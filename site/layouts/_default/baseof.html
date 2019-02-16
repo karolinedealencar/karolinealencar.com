@@ -5,7 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
-  <title>{{ $.Site.Title }}</title>
+  
+  {{ if .IsHome -}}
+    <title>{{ .Site.Title }}</title>
+  {{- else -}}
+    <title>{{ .Title }}</title>
+  {{- end }}
+  <meta name="description" content="{{ $.Param "description" }}">
+  <meta name="author" content="Karoline Alencar">
+  {{ if .IsHome -}}
+    <meta name="keywords" content="Web Developer, Blog, Tutorial, Development">
+  {{- else -}}
+    {{ with .Keywords }}<meta name="keywords" content="{{ range $i, $e := . }}{{ if $i }} {{ end }}{{ $e }}{{ end }}">{{ end }}
+  {{- end }}
 
   <link href="https://fonts.googleapis.com/css?family=Raleway:500,700" rel="stylesheet">
   {{ $stylesheet := .Site.Data.webpack.main }}

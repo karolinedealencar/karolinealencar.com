@@ -3,6 +3,8 @@ author: "Karoline Alencar"
 date: 2019-01-04
 title: Updating Background with SpeechRecognition & Custom Properties
 categories: "javascript"
+description: "Tutorial on how to update your background with CSS Custom Properties and SpeechRecognition API"
+keywords: "javascript, tutorial, css, SpeechRecognition"
 ---
 
 **Warning: It only works on Chrome.**
