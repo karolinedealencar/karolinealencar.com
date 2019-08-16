@@ -4,6 +4,13 @@
     <article class="post">
         <header class="post__header">
             <h1 class="post__title">{{ .Title }}</h1>
+            {{ if .IsTranslated }}
+                <nav class="post__languages">
+                    {{ range .Translations }}
+                        <a href="{{ .Permalink }}">Post in {{ .Language.LanguageName }}</a>
+                    {{ end}}
+                </nav>
+            {{ end }}
             <div class="post__info">
                 <p>
                     {{ .Date.Format "02/01/2006" }} - 

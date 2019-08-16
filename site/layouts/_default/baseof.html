@@ -18,6 +18,11 @@
   {{- else -}}
     {{ with .Keywords }}<meta name="keywords" content="{{ range $i, $e := . }}{{ if $i }} {{ end }}{{ $e }}{{ end }}">{{ end }}
   {{- end }}
+  {{ if .IsTranslated }}
+    {{ range .Translations }}
+      <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}" title="{{ .Language.LanguageName }}">
+    {{ end }}
+  {{ end }}
 
   <link href="https://fonts.googleapis.com/css?family=Raleway:500,700" rel="stylesheet">
   {{ $stylesheet := .Site.Data.webpack.main }}
