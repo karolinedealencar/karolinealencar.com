@@ -5,6 +5,7 @@ title = "Karoline Alencar — Web Developer"
 disqusShortname = "karolinealencar"
 pygmentsStyle = "monokai"
 PygmentsCodeFences = true
+googleAnalytics = "UA-145823163-1"
 
 [taxonomies]
    categories = "categories"
