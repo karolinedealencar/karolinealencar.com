@@ -1,11 +1,19 @@
 baseurl = "/"
-languageCode = "en-us"
-languageLang = "en"
 title = "Karoline Alencar — Web Developer"
 disqusShortname = "karolinealencar"
 pygmentsStyle = "monokai"
 PygmentsCodeFences = true
 googleAnalytics = "UA-145823163-1"
+
+[languages]
+  [languages.en]
+    title = "Karoline Alencar — Web Developer"
+    languageName = "English"
+    weight = 1
+  [languages.pt]
+    title = "Karoline Alencar — Desenvolvedora Web"
+    languageName = "Portuguese"
+    weight = 2
 
 [taxonomies]
    categories = "categories"
