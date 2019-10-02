@@ -55,7 +55,7 @@
     <section class="post-list">
         <h2 class="post-list__title">Articles</h2>
         <ul class="post-list__list">
-            {{ range .Pages.ByDate -}}
+            {{ range .Data.Pages -}}
                 <li class="post-list__post">
                     <div class="post-list__post-info">
                         {{ .Date.Format "02/01/2006" }} - 
