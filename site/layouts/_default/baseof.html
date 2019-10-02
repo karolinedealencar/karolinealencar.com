@@ -35,14 +35,19 @@
 
   {{ if .IsHome -}}
     <meta property="og:title" content="{{ .Site.Title }}">
+    <meta name="twitter:title" content="{{ .Site.Title }}">
   {{- else -}}
     <meta property="og:title" content="Karoline Alencar — {{ .Title }}">
+    <meta name="twitter:title" content="Karoline Alencar — {{ .Title }}">
   {{- end }}
 
   <meta property="og:description" content="{{ $.Param "description" }}">
   <meta property="og:image" content="/img/intro-illustration.svg">
-  <meta property="og:url" content="{{ .URL }}">
-  <meta name="twitter:card" content="/img/intro-illustration.svge">
+  <meta property="og:url" content="https://karolinealencar.com{{ .Permalink }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@karoldalencar">
+  <meta name="twitter:description" content="{{ $.Param "description" }}">
+  <meta name="twitter:image" content="/img/intro-illustration.svg">
 </head>
 
 <body>
