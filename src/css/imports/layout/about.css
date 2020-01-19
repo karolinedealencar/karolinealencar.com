@@ -6,6 +6,7 @@
 }
 
 .about__illustration {
+    display: block;
     width: 80%;
     max-width: 400px;
     margin: 0 auto 1rem auto;
