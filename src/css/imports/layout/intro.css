@@ -8,13 +8,14 @@
 }
 
 .intro__illustration {
+    display: block;
     width: 80%;
     max-width: 480px;
     margin: 0 auto;
 }
 
 .intro__content {
-    transform: translateY(-50px);
+    transform: translateY(-35px);
 }
 
 @media (max-width: 600px) {
