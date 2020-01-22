@@ -5,7 +5,7 @@ import * as S from "./styled"
 
 const Header = ({ siteTitle }) => (
   <S.Header>
-    <S.HeaderLink to="/" title="Karoline Alencar — Home" logo>
+    <S.HeaderLink to="/" title="Karoline Alencar — Home" logo="true">
       {siteTitle}
     </S.HeaderLink>
     <S.HeaderNav>

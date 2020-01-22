@@ -5,9 +5,9 @@ import icons from "./icons"
 
 import * as S from "./styled"
 
-const SocialLinks = () => (
+const SocialLinks = ({ isRight }) => (
   <S.SocialLinks>
-    <S.SocialLinksList>
+    <S.SocialLinksList isRight={isRight}>
       {links.map((item, index) => {
         const Icon = icons[item.label]
         return (
