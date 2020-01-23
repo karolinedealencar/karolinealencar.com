@@ -16,6 +16,7 @@ const SocialLinks = ({ isRight }) => (
               href={item.link}
               title={item.label}
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Icon />
             </S.SocialLinksLink>

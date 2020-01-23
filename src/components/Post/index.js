@@ -2,24 +2,32 @@ import React from "react"
 
 import * as S from "./styled"
 
-const Post = ({ post }) => (
-  <S.PostWrapper>
-    <S.PostHeader>
-      <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
-      <S.PostLanguagesWrapper>
-        <S.PostLanguagesLink to="/">Post in Portuguese</S.PostLanguagesLink>
-      </S.PostLanguagesWrapper>
-      <S.PostInfo>
-        <S.PostParagraph>
-          {post.frontmatter.date} -{" "}
-          <S.PostLink to={`/categories/${post.frontmatter.categories}`}>
-            #{post.frontmatter.categories}
-          </S.PostLink>
-        </S.PostParagraph>
-      </S.PostInfo>
-    </S.PostHeader>
-    <div dangerouslySetInnerHTML={{ __html: post.html }} />
-  </S.PostWrapper>
-)
+const Post = ({ post }) => {
+  const title = post.frontmatter.title
+  const date = post.frontmatter.date
+  const tag = post.frontmatter.categories
+
+  return (
+    <S.PostWrapper>
+      <S.PostHeader>
+        <S.PostTitle>{title}</S.PostTitle>
+        <S.PostLanguagesWrapper>
+          <S.PostLanguagesLink to="/" title="Post in Portuguese">
+            Post in Portuguese
+          </S.PostLanguagesLink>
+        </S.PostLanguagesWrapper>
+        <S.PostInfo>
+          <S.PostParagraph>
+            {date} -{" "}
+            <S.PostLink to={`/tags/${tag}`} title={`Go to ${tag} list`}>
+              #{tag}
+            </S.PostLink>
+          </S.PostParagraph>
+        </S.PostInfo>
+      </S.PostHeader>
+      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+    </S.PostWrapper>
+  )
+}
 
 export default Post

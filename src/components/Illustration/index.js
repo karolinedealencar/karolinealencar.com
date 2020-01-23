@@ -24,6 +24,7 @@ const Illustration = () => {
       href="https://icons8.com"
       title="Illustration by Ouch.pics"
       target="_blank"
+      rel="noopener noreferrer"
     >
       <Img fluid={data.placeholderImage.childImageSharp.fluid} />
     </S.Illustration>

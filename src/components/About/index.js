@@ -27,6 +27,8 @@ const About = () => (
       <S.AboutLink
         href="https://twitter.com/karoldalencar"
         title="Twitter - @karoldalencar"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         @karoldalencar
       </S.AboutLink>
@@ -38,6 +40,8 @@ const About = () => (
         <S.AboutLink
           href="https://www.slideshare.net/KarolineAlencar/talk-sorocabacss-entendendo-box-model"
           title="SorocabaCSS - Entendendo Box Model (PT-BR)"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           SorocabaCSS - Entendendo Box Model (PT-BR)
         </S.AboutLink>

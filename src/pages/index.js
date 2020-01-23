@@ -4,8 +4,9 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Intro from "../components/Intro"
 import PostsList from "../components/PostsList"
-import * as S from "../components/PostsListWrapper/styled"
 import SEO from "../components/seo"
+
+import * as S from "../components/PostsListWrapper/styled"
 
 const IndexPage = ({ data }) => (
   <Layout>

@@ -1,10 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
+
 import Layout from "../components/Layout"
 import Post from "../components/Post"
 
 export default ({ data }) => {
   const post = data.markdownRemark
+
   return (
     <Layout>
       <Post post={post} />
