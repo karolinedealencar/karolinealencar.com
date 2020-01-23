@@ -44,18 +44,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Karoline Alencar — Web Developer`,
+        short_name: `Karoline Alencar Blog`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ffffff`,
+        theme_color: `#e984af`,
         display: `minimal-ui`,
         icon: `static/assets/img/icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sitemap`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }
