@@ -4,8 +4,8 @@ import * as S from "./styled"
 
 const PostsList = ({ posts }) => (
   <S.PostsListList>
-    {posts.map(post => {
-      const id = post.node.id
+    {posts.map((post, index) => {
+      const id = index
       const date = post.node.frontmatter.date
       const tag = post.node.frontmatter.tag
       const slug = post.node.fields.slug
