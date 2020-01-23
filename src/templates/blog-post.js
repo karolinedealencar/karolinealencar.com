@@ -3,12 +3,14 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import Post from "../components/Post"
+import SEO from "../components/seo"
 
 export default ({ data }) => {
   const post = data.markdownRemark
 
   return (
     <Layout>
+      <SEO title={post.frontmatter.title} />
       <Post post={post} />
     </Layout>
   )
