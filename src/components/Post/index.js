@@ -1,5 +1,7 @@
 import React from "react"
 
+import Comments from "../Comments"
+
 import * as S from "./styled"
 
 const Post = ({ post }) => {
@@ -26,6 +28,7 @@ const Post = ({ post }) => {
         </S.PostInfo>
       </S.PostHeader>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <Comments title={title} slug={post.fields.slug} />
     </S.PostWrapper>
   )
 }

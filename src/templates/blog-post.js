@@ -25,6 +25,9 @@ export const query = graphql`
         tag
         date(formatString: "DD/MM/YYYY")
       }
+      fields {
+        slug
+      }
     }
   }
 `
