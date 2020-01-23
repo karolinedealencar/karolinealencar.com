@@ -2,7 +2,7 @@
 author: "Karoline Alencar"
 date: 2019-10-01
 title: "Tutorial: The Sims 4 Price Scraping with NodeJS, Puppeteer & Nodemailer"
-categories: "nodejs"
+tag: "nodejs"
 description: "Tutorial on how to make a nodejs scraping"
 keywords: "javascript, tutorial, nodejs, scraping"
 ---

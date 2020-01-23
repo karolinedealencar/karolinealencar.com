@@ -7,14 +7,14 @@ const PostsList = ({ posts }) => (
     {posts.map(post => {
       const id = post.node.id
       const date = post.node.frontmatter.date
-      const tag = post.node.frontmatter.categories
+      const tag = post.node.frontmatter.tag
       const slug = post.node.fields.slug
       const title = post.node.frontmatter.title
 
       return (
         <S.PostsListItem key={id}>
           <S.PostsListInfo>
-            {date} -
+            {date} -{" "}
             <S.PostsListTag to={`/tags/${tag}`} title={`Go to ${tag} list`}>
               #{tag}
             </S.PostsListTag>

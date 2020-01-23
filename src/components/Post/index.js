@@ -5,7 +5,7 @@ import * as S from "./styled"
 const Post = ({ post }) => {
   const title = post.frontmatter.title
   const date = post.frontmatter.date
-  const tag = post.frontmatter.categories
+  const tag = post.frontmatter.tag
 
   return (
     <S.PostWrapper>
