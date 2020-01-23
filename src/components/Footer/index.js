@@ -10,7 +10,7 @@ const Footer = () => (
         💕
       </span>
       —{" "}
-      <S.FooterLink to="/" title="RSS Feed">
+      <S.FooterLink href="/rss.xml" title="RSS Feed">
         RSS Feed
       </S.FooterLink>
     </S.FooterParagraph>

@@ -41,3 +41,15 @@ export const HeaderLink = styled(Link)`
     font-size: 1.2rem; 
   `}
 `
+
+export const HeaderLinkRSS = styled.a`
+  display: block;
+  padding: 0.8rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+
+  ${media.lessThan("large")`
+    padding: .4rem;
+    font-size: 1.2rem; 
+  `}
+`

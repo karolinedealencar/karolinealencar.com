@@ -16,9 +16,9 @@ const Header = ({ siteTitle }) => (
           </S.HeaderLink>
         </S.HeaderItem>
         <S.HeaderItem>
-          <S.HeaderLink to="/about" title="RSS">
+          <S.HeaderLinkRSS href="/rss.xml" title="RSS">
             RSS
-          </S.HeaderLink>
+          </S.HeaderLinkRSS>
         </S.HeaderItem>
       </S.HeaderList>
     </S.HeaderNav>
