@@ -13,11 +13,6 @@ const Post = ({ post }) => {
     <S.PostWrapper>
       <S.PostHeader>
         <S.PostTitle>{title}</S.PostTitle>
-        <S.PostLanguagesWrapper>
-          <S.PostLanguagesLink to="/" title="Post in Portuguese">
-            Post in Portuguese
-          </S.PostLanguagesLink>
-        </S.PostLanguagesWrapper>
         <S.PostInfo>
           <S.PostParagraph>
             {date} -{" "}
