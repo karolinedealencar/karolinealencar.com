@@ -21,12 +21,8 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
 
-    body {
-        min-height: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 0 .8rem;    
-        
+    body {        
+        padding: 0 .8rem;            
         color: var(--main-color);
         font-family: 'Raleway', sans-serif;
     }
