@@ -45,7 +45,7 @@ const scrape = async () => {
   const browser = await puppeteer.launch({ headless: false })
   const page = await browser.newPage()
   await page.goto("https://www.ea.com/games/the-sims/the-sims-4/pc/store")
-  await page.waitFor(1000)
+  await page.waitForSelector(".product__group__pack")
 }
 ```
 
@@ -106,7 +106,7 @@ const emailSend = async products => {
 }
 ```
 
-Here you can add your email and password. Note that it will only work with gmail and you need to enable 'allow less secure apps' in your config.
+Here you can add your email and password. Note that it will _only work with gmail_ and you need to enable _'allow less secure apps'_ in your config, **don't forget to turn it off later**.
 
 ### Create nodemailer transporter
 
@@ -226,7 +226,7 @@ const scrape = async () => {
   const browser = await puppeteer.launch({ headless: false })
   const page = await browser.newPage()
   await page.goto("https://www.ea.com/games/the-sims/the-sims-4/pc/store")
-  await page.waitFor(1000)
+  await page.waitForSelector(".product__group__pack")
 
   const result = await page.evaluate(() => {
     const products = Array.from(
