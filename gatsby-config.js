@@ -15,14 +15,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Raleway`,
-            variants: [`500`, `700`],
-          },
-        ],
+        fonts: [`raleway\:500,700`],
+        display: "swap",
       },
     },
     {
