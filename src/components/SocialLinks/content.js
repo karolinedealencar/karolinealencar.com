@@ -4,12 +4,12 @@ const links = [
     link: "https://github.com/karolinedealencar",
   },
   {
-    label: "Twitter",
-    link: "https://twitter.com/karoldalencar",
+    label: "Twitch",
+    link: "https://www.twitch.tv/kakkau",
   },
   {
-    label: "Codepen",
-    link: "https://codepen.io/KarolinedeAlencar/",
+    label: "Twitter",
+    link: "https://twitter.com/karoldalencar",
   },
   {
     label: "Linkedin",
