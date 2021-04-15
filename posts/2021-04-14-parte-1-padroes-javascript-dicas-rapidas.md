@@ -1,7 +1,7 @@
 ---
 author: "Karoline Alencar"
 date: 2021-04-14
-title: (Parte 1) Padrões JavaScript: Dicas rápidas
+title: "(Parte 1) Padrões JavaScript: Dicas rápidas"
 tag: "javascript"
 description: "Dicas de padrões javascript tiradas do livro do Stoyan Stefanov"
 keywords: "javascript, dicas, patterns"
