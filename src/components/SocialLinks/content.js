@@ -9,7 +9,7 @@ const links = [
   },
   {
     label: "Twitter",
-    link: "https://twitter.com/karoldalencar",
+    link: "https://twitter.com/_kakkau",
   },
   {
     label: "Linkedin",

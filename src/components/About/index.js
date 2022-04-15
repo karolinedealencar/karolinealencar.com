@@ -25,12 +25,12 @@ const About = () => (
       </S.AboutLink>
       or{" "}
       <S.AboutLink
-        href="https://twitter.com/karoldalencar"
-        title="Twitter - @karoldalencar"
+        href="https://twitter.com/_kakkau"
+        title="Twitter - @_kakkau"
         target="_blank"
         rel="noopener noreferrer"
       >
-        @karoldalencar
+        @_kakkau
       </S.AboutLink>
       . Feel free to ask me anything :)
     </S.AboutParagraph>
