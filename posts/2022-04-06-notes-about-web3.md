@@ -1,6 +1,6 @@
 ---
 author: "Karoline Alencar"
-date: 2022-04-15
+date: 2022-04-06
 title: "[a newbie on its journey to learn about web 3] notes about web 3.0"
 tag: "web3"
 description: "Notes about web3"
